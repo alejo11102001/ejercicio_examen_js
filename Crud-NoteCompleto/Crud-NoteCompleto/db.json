@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@crudnote.com",
+      "password": "123",
+      "registrationDate": "2025-07-12",
+      "role": "admin"
+    },
+    {
+      "username": "abrahan",
+      "email": "abrahan@gmail.com",
+      "password": "123456",
+      "registrationDate": "2025-07-13T01:33:49.368Z",
+      "id": 2,
+      "role": "user"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "title": "Mi primera nota",
+      "content": "Este es el contenido de la primera nota creada por el administrador.",
+      "ownerId": 1,
+      "imageUrl": "https://picsum.photos/id/237/400/200",
+      "sharedWith": [
+        {
+          "userId": 2,
+          "permission": "readonly"
+        }
+      ]
+    },
+    {
+      "title": "hola2",
+      "content": "hola1",
+      "ownerId": 2,
+      "imageUrl": "",
+      "sharedWith": [
+        {
+          "userId": 1,
+          "permission": "edit"
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": 1,
+      "email": "subscriber@example.com"
+    }
+  ]
+}

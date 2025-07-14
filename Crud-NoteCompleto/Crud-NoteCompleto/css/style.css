@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    flex: 1;
+}
+
+/* Estilos para el tema oscuro */
+.dark-mode h2.card-title {
+    color: #e0e0e0 !important;
+}
+.dark-mode h5.card-title {
+    color: #e0e0e0 !important;
+}
+.dark-mode p {
+    color: #e0e0e0 !important;
+}
+.dark-mode label {
+    color: #e0e0e0 !important;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .text-dark {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .card {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+.dark-mode .form-control {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #aaa;
+}
+
+.dark-mode .modal-content {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+.dark-mode .list-group-item,
+.dark-mode .table-striped>tbody>tr:nth-of-type(odd)>* {
+    background-color: #333;
+    border-color: #555;
+    color: #e0e0e0;
+}
+
+.dark-mode .table {
+    color: #e0e0e0;
+}
+
+.dark-mode .btn-close {
+    filter: invert(1);
+}
+
+.note-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.dark-mode .note-card:hover {
+     box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1) !important;
+}
