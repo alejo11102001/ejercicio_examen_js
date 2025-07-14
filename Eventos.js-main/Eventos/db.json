@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": "admin-123",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": "visitor-456",
+      "username": "visitante",
+      "password": "visitorpassword",
+      "role": "visitor",
+      "registeredEvents": []
+    },
+    {
+      "username": "abrahan",
+      "password": "123456",
+      "role": "visitor",
+      "id": "nAYiOUI",
+      "registeredEvents": [
+        {
+          "id": "event-1",
+          "name": "Conferencia de Tecnología 2025",
+          "date": "2025-09-15"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "event-1",
+      "name": "Conferencia de Tecnología 2025",
+      "date": "2025-09-15",
+      "location": "Centro de Convenciones",
+      "capacity": 200,
+      "registeredAttendees": [
+        {
+          "id": "nAYiOUI",
+          "username": "abrahan"
+        }
+      ]
+    },
+    {
+      "id": "event-2",
+      "name": "Taller de Desarrollo Web",
+      "date": "2025-10-01",
+      "location": "Espacio Co-working",
+      "capacity": 50,
+      "registeredAttendees": []
+    },
+    {
+      "id": "event-3",
+      "name": "Hackathon de Innovación",
+      "date": "2025-11-20",
+      "location": "Campus Universitario",
+      "capacity": 100,
+      "registeredAttendees": []
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+/* public/css/style.css */
+
+/* Importa la fuente Inter de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Estilos base para el cuerpo, asegurando que la fuente Inter se aplique */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Las clases de Bootstrap como bg-light y text-dark ya manejan el fondo y color de texto base */
+}
+
+/* Contenedor principal de la aplicación para asegurar que ocupe el espacio disponible */
+#app-container {
+    /* Las clases de Bootstrap como container, d-flex, flex-column, align-items-center, justify-content-center
+       y p-3 ya manejan el layout principal. Este CSS es para estilos más específicos o sobrescrituras. */
+    max-width: 1200px; /* Limita el ancho máximo del contenido */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Asegura que ocupe el 100% del ancho disponible hasta el max-width */
+}
+
+/* Estilos para grupos de formularios */
+.form-group {
+    margin-bottom: 1rem; /* Margen inferior para separar los campos del formulario */
+}
+
+.form-group label {
+    display: block; /* La etiqueta ocupa su propia línea */
+    margin-bottom: 0.5rem; /* Espacio entre la etiqueta y el input */
+    font-weight: 500; /* Peso de la fuente semibold */
+    color: #495057; /* Color de texto gris oscuro (similar a Bootstrap text-secondary) */
+}
+
+/* Estilos para todos los tipos de input y select dentro de un form-group */
+/* Bootstrap ya proporciona clases como .form-control para esto, pero podemos añadir overrides */
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select {
+    /* Bootstrap .form-control ya maneja width: 100%, padding, border, border-radius, etc. */
+    /* Aquí podemos añadir sombras o transiciones personalizadas si no las cubre Bootstrap */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Sombra sutil */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transición suave al enfocar */
+}
+
+/* Estilos al enfocar los inputs y selects (Bootstrap ya tiene .form-control:focus) */
+.form-group input:focus,
+.form-group select:focus {
+    outline: none; /* Elimina el contorno por defecto del navegador */
+    border-color: #80bdff; /* Color de borde azul de Bootstrap por defecto al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra de enfoque de Bootstrap */
+}
+
+/* Estilos generales para botones */
+/* Bootstrap ya tiene .btn, .btn-primary, .btn-secondary, .btn-danger etc. */
+/* Este bloque es para cualquier estilo adicional que no cubran las clases de Bootstrap */
+.btn {
+    font-weight: 600; /* Peso de la fuente semibold */
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilos para tarjetas (contenedores de contenido) */
+/* Bootstrap ya tiene .card */
+.card {
+    border-radius: 0.75rem; /* Esquinas más redondeadas que el .card por defecto de Bootstrap */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Sombra más pronunciada que la de Bootstrap */
+}
+
+/* Estilos para mensajes de alerta (éxito, error) */
+/* Bootstrap ya tiene .alert, .alert-success, .alert-danger */
+.message {
+    font-weight: 500; /* Peso de la fuente semibold */
+}
+
+/* Estilos para la barra de navegación */
+/* Bootstrap ya tiene .navbar, .navbar-dark, .bg-dark, .container, .d-flex, .justify-content-between, .align-items-center */
+.navbar-brand {
+    color: #66b2ff; /* Un azul más claro para la marca */
+    font-weight: 700; /* Peso de la fuente bold */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #99ccff; /* Un azul aún más claro al pasar el ratón */
+}
+
+.navbar-links a {
+    color: #adb5bd; /* Color de texto gris claro */
+    margin-left: 1rem; /* Margen a la izquierda para separar enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 500; /* Peso de la fuente semibold */
+    transition: color 0.15s ease-in-out; /* Transición suave al pasar el ratón */
+}
+
+.navbar-links a:hover {
+    color: #fff; /* Color de texto blanco al pasar el ratón */
+}
+
+.navbar-links button {
+    margin-left: 1rem; /* Margen a la izquierda para separar el botón de logout */
+}
+
+/* Estilos para contenedores de tabla */
+/* Bootstrap ya tiene .table, .table-striped, .table-hover, .table-bordered */
+.table-container {
+    overflow-x: auto; /* Permite el scroll horizontal en tablas grandes en pantallas pequeñas */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+.table {
+    border-radius: 0.75rem; /* Esquinas redondeadas para la tabla */
+    overflow: hidden; /* Importante para que los bordes redondeados se apliquen al contenido de la tabla */
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); /* Sombra sutil para la tabla */
+}
+
+.table thead th {
+    background-color: #e9ecef; /* Fondo gris muy claro para el encabezado de la tabla */
+    font-weight: 600; /* Peso de la fuente semibold */
+    color: #495057; /* Color de texto gris oscuro */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-size: 0.875rem; /* Tamaño de fuente pequeño */
+}
+
+/* Ajustes responsivos para pantallas pequeñas (móviles) */
+@media (max-width: 767.98px) { /* Bootstrap usa 767.98px para sm */
+    .navbar {
+        flex-direction: column; /* Apila los elementos de la barra de navegación verticalmente */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+
+    .navbar-links {
+        margin-top: 1rem; /* Margen superior para separar de la marca */
+        width: 100%; /* Ocupa todo el ancho */
+        flex-direction: column; /* Apila los enlaces verticalmente */
+        align-items: flex-start; /* Alinea los enlaces al inicio */
+    }
+
+    .navbar-links a,
+    .navbar-links button {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-bottom: 0.75rem; /* Margen inferior para separar enlaces/botones */
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    .btn {
+        width: 100%; /* Los botones ocupan todo el ancho en móviles */
+        margin-bottom: 0.5rem; /* Margen inferior para separar botones */
+    }
+
+    .card {
+        padding: 1rem; /* Reduce el relleno de las tarjetas */
+    }
+}
