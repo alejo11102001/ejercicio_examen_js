@@ -1,0 +1,168 @@
+
+    body, html {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+    height: 100%;
+    }
+
+    main{
+        height: 90vh
+    }
+
+    .hero-img {
+    max-width: 100%;
+    border-radius: 10px;
+    }
+
+    .section-title {
+    font-weight: bold;
+    }
+
+    .login-box {
+    max-width: 600px;
+    }
+
+    .btn-signin {
+        background-color: #0d6efd;
+        color: white;
+        border: none;
+    }
+
+    .feature-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    height: 100%;
+    text-align: left;
+    }
+
+    .link_register {
+        font-size: 20px;
+    }
+
+    .img_perfil {
+    width: 40px; 
+    height: 40px;
+    }
+
+    .image-container {
+    background-color: white; /* por defecto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    }
+
+    body.dark-mode .image-container {
+    background-color: #121212; /* fondo oscuro cuando está en dark-mode */
+    }
+
+
+    /* Estilo general del modo oscuro */
+    .dark-mode {
+    background-color: #121212 !important;
+    color: #f5f5f5 !important;
+    }
+
+    /* Navbar y footer */
+    .dark-mode .navbar,
+    .dark-mode footer {
+    background-color: #1e1e1e !important;
+    color: #f5f5f5 !important;
+    }
+
+    /* Cajas de características */
+    .dark-mode .feature-box {
+    background-color: #2c2c2c;
+    border-color: #444;
+    }
+
+    /* Enlaces */
+    .dark-mode a {
+    color: #ccc !important;
+    }
+
+    /* Botones personalizados */
+    .dark-mode .btn-signin {
+    background-color: #0d6efd;
+    color: white;
+    }
+
+    .dark-mode .btn-register {
+    background-color: #333;
+    color: #f5f5f5;
+    }
+
+    /* Fondo de la sección "What is CrudNote?" */
+    .dark-mode .bg-light {
+    background-color: #1f1f1f !important;
+    }
+
+    footer {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: bold;
+    }
+
+    .btn-register {
+    background-color: #f1f1f1;
+    color: #000;
+    font-weight: 700;
+    border-radius: 50px;
+    }
+
+    .btn-signin {
+    background-color: #3b82f6;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+    }
+
+    body.dark-mode {
+    background-color: #121212;
+    color: white;
+    }
+
+    .dark-mode .border {
+    border-color: #444 !important;
+    }
+
+    .dark-mode .btn-light {
+    background-color: #333;
+    color: white;
+    }
+
+    /* Corregir texto "text-muted" en modo oscuro */
+    .dark-mode .text-muted {
+    color: #ccc !important; /* texto gris claro */
+    }
+
+    /* Cambiar color de pestañas del dashboard */
+    .nav-tabs .nav-link {
+    color: #000; /* por defecto en todos */
+    }
+
+    .nav-tabs .nav-link.active {
+    background-color: #0d6efd; /* color activo */
+    border: none;
+    color: #fff !important; /* color activo en blanco */
+    font-weight: bold;
+    }
+
+    /* Ajuste visual extra si quieres borde abajo en el activo */
+    .nav-tabs .nav-link.active {
+    border-bottom: 2px solid #0d6efd;
+    }
+
+    /* Opcional: que no se pongan azul al pasar el mouse */
+    .nav-tabs .nav-link:hover {
+    color: #eee;
+    }
+
+    .btn-signout {
+    background-color: grey;
+    color: white;
+    border-radius: 50px;
+    }

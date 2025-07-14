@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "FullName": "diego alejandro zuluaga yepes",
+      "Email": "diego@gmail.com",
+      "Username": "diego11",
+      "Password": "hola123",
+      "id": 1
+    },
+    {
+      "FullName": "alejo yepes",
+      "Email": "alejo@gmail.com",
+      "Username": "alejo11",
+      "Password": "hola123",
+      "id": 2
+    }
+  ],
+  "notes": [
+  ]
+}
